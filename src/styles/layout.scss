@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template:
+    "header header" auto
+    "aside main" minmax(0, 1fr)
+    "footer footer" auto /
+    auto minmax(0, 1fr);
+  min-height: 100%;
+  background-color: var(--semi-color-bg-0);
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#root {
+  display: contents;
+}
+
+header {
+  grid-area: header;
+  z-index: 1;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}

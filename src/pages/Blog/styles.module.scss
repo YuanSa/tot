@@ -1,0 +1,50 @@
+.page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1400px;
+  padding: 100px;
+  margin: auto;
+  gap: 50px;
+}
+
+.title {
+  font-size: 4em;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  place-self: center;
+
+  > .card {
+    cursor: pointer;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 8px 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    border: 4px dotted transparent;
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--semi-border-radius-large);
+
+    &:hover {
+      border-color: #000;
+    }
+
+    > .icon {
+      font-size: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 100px;
+    text-align: center;
+}
+.texts {
+    color: var(--semi-color-text-0);
+}
+.title {
+    font-size: 4em;
+    line-height: 1.2;
+}
+.description {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--semi-color-text-2);
+}
+.animation {
+  width: 300px;
+  height: 300px;
+}

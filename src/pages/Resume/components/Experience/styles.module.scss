@@ -1,0 +1,162 @@
+@media screen {
+  .header {
+    display: flex;
+
+    > .title {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+
+      > .main {
+        > .summary {
+          display: inline;
+          font-size: 18px;
+          font-weight: 800;
+          margin: 0;
+        }
+        > .links {
+          display: inline;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          > .link {
+            margin-inline-start: 1em;
+            display: inline;
+            font-size: 12px;
+            > .link-contents {
+              > svg {
+                margin-inline-end: 0.2em;
+              }
+            }
+          }
+        }
+      }
+
+      > .description {
+        margin: 4px 0 0;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    > .extra {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      > .location {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      > .period {
+        margin: 4px 0 0;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .details {
+    margin: 8px 0 0 0;
+    padding-inline-start: 1.5em;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    color: var(--semi-color-text-0);
+
+    &.single {
+      padding-inline-start: 0;
+      line-height: 1.6;
+    }
+  }
+}
+
+@media print {
+  .section {
+    padding: 0.2cm;
+    page-break-inside: avoid;
+
+    &:not(:last-child) {
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+
+        > .main {
+          .summary {
+            display: inline;
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 600;
+          }
+          > .links {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            > .link {
+              margin-inline-start: 1em;
+              display: inline;
+              font-size: 12px;
+              > .link-contents {
+                text-decoration: none;
+                > svg {
+                  display: none;
+                }
+                &::after {
+                  margin-inline-start: .5em;
+                  content: attr(href);
+                }
+              }
+              &:not(:first-child) {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .description {
+          margin: 0;
+          font-size: 12px;
+        }
+      }
+
+      .extra {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+
+        .location {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .period {
+          color: #777;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .details {
+      margin: 0.1cm 0 0 0;
+      padding: 0 0 0 0.7cm;
+      line-height: 1.5;
+      font-size: 14px;
+
+      .details-item {
+        &:not(:last-child) {
+          margin-bottom: 0.1cm;
+        }
+      }
+    }
+  }
+}

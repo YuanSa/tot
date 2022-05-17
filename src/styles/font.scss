@@ -1,0 +1,11 @@
+@media screen {
+  body {
+    --main-font: "Nunito Sans", sans-serif;
+  }
+}
+
+@media print {
+  body {
+    --main-font: "Noto Serif", serif;
+  }
+}

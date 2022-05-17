@@ -1,0 +1,115 @@
+{
+  "language": "zh-CN",
+  "name": "YANG Zi Han",
+  "contacts": {
+    "phone": "(+86)18428096715",
+    "email": "yuansasi@outlook.com",
+    "address": "1467 Caobao Road, Shanghai, China",
+    "postCode": "201101"
+  },
+  "sections": [
+    {
+      "title": "Career",
+      "items": [
+        {
+          "title": "ByteDance",
+          "subtitle": "Frontend Engineer of Music Products",
+          "location": "Shanghai, China",
+          "date": "2020-10 till now",
+          "highlights": [
+            "Developed Douyin (Chinese version TikTok) Music Open Platform",
+            "Developed SoundOn (music distribution platform of ByteDance) website and API from ground up. Owner of music distribution part's code.",
+            "Developed SoundOn's in-house frontend library from ground up and several ByteDance scoped's in-house frontend components."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "title": "SoundOn (music distribution platform of ByteDance)",
+          "subtitle": "Provide music copyrights to ByteDance products",
+          "date": "2021-02 till now",
+          "highlights": [
+            "Build the hole project from ground up. Established the state management system based on SWR in frontend. And keep maintain/develope it till now.",
+            "Owner of SoundOn's music distribution part's code.",
+            "Developed online image cutting tools, 3rd party codes control manage system, rich text i18n & localization solution, classified i18n FAQ CMS, etc.",
+            "Cooperated with coworkers to develop an in-house online editing tool, to reduce the time cost of trim an audio from minutes to seconds.",
+            "Built SoundOn's frontend component library on the top of Semi Design, integrated it with user action stat functions to reduce codes in product's logic. By adding unit testing and E2E testing to the library to achieve migrate based libraries smoothly"
+          ],
+          "links": [{ "url": "https://www.soundon.global" }]
+        },
+        {
+          "title": "Douyin Music Open Platform (Douyin Musician)",
+          "subtitle": "Help artists upload their musics to Douyin and verity their identity as \"Musician\" to get the verified badge.",
+          "date": "2020-10 to 2021-02",
+          "highlights": [
+            "Developed the homepage of the platform, rebuilt the music uploading component, built the non-invasive user actions statistic system.",
+            "Migrate the frontend component library the platform based on from the Ant Design to the in-house Semi Design."
+          ]
+        },
+        {
+          "title": "Alter Roles Scheduler",
+          "date": "2020-10 till now",
+          "highlights": [
+            "Developed Lark bot Alter to provide people's roles schedule, scheduled alert, embedded Lark Doc components. Used in 10+ scenarios 10 across different teams."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "title": "Columbia University",
+          "subtitle": "Master of Science in Electrical Engineering. GPA 3.5/4.0",
+          "location": "New Yrok, NY",
+          "date": "2019-09 to 2020-07",
+          "highlights": [
+            "Courses including Algorithms, IoT, AI, Big Data, Block-chain, 5G and Quantum Computing.",
+            "Developed \"Recommendation System for the Pick and Ban Choices in League of Legends\""
+          ]
+        },
+        {
+          "title": "University of Electronic Science and Technology of China (Abbr. UESTC)",
+          "subtitle": "Bachelor in Electro-optics Information Science and Technology. GPA: 3.8/4.0",
+          "location": "Chengdu, China",
+          "date": "2015-09 to 2019-07",
+          "highlights": [
+            "Awards several scholarships, such as \"People's First Class Scholarship\" and \"People's Second Class Scholarship\"",
+            "To solve the problem that we students are hard to discover the best teacher and the source to join, developed a courses/teachers rating website."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Others",
+      "items": [
+        {
+          "title": "Video creator in YouTube and Bilibili",
+          "date": "2015-10 to 2020-07",
+          "highlights": [
+            "Earned 20k subscriptions and $300 dollars from YouTube and Bilibili by sharing my self-learned skills in videos. Topics including frontend developing, Photoshop, video editing and document typography."
+          ]
+        },
+        {
+          "title": "Leader of Department's News Center in UESTC",
+          "date": "2016-09 to 2017-09",
+          "highlights": [
+            "Manage departments's News Center's WeChat public channel to post articles. In charge of video editing and visual design.",
+            "Revolve the contents' produce flow and bring the team won the second price of the university's new media campaign.",
+            "Won the title of \"Excellent Minister\" of the department's Youth League Committee."
+          ]
+        },
+        {
+          "title": "Sumer Project \"Creation Management\" of National University of Singapore ",
+          "date": "2017-01",
+          "highlights": [
+            "Investigated the commercial modal of the Universal and provided our advice to improve. Our team are chosen as \"The Best Team\", and our team members got the recommendation letter from the Execute Chief, Hang Chang Chieh."
+          ]
+        }
+      ]
+    }
+  ]
+}
