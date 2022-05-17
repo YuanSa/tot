@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "vite --host",
     "blog": "node ./scripts/compile-blogs.mjs ./studio/blog-article ./src/assets/blog-article",
-    "start": "vite --host & node ./scripts/compile-blogs.mjs ./studio/blog-article ./src/assets/blog-article",
+    "start": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
