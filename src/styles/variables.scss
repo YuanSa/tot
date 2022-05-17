@@ -1,0 +1,41 @@
+body {
+  --header-height: 60px;
+  --header-height-mini: 30px;
+  --header-overflow: 6px;
+
+  --safe-padding-top: env(safe-area-inset-top);
+  --safe-padding-right: env(safe-area-inset-right);
+  --safe-padding-bottom: env(safe-area-inset-bottom);
+  --safe-padding-left: env(safe-area-inset-left);
+  --safe-padding-horizontal: max(
+    var(--safe-padding-left),
+    var(--safe-padding-right)
+  );
+  --safe-padding-vertical: max(
+    var(--safe-padding-top),
+    var(--safe-padding-bottom)
+  );
+
+  --min-content-padding-horizontal: max(32px, var(--safe-padding-horizontal));
+
+  &.width-narrow {
+    --max-content-width: 800px;
+  }
+
+  &.width-normal {
+    --max-content-width: 1100px;
+  }
+
+  &.width-wide {
+    --max-content-width: 1400px;
+  }
+
+  &.width-maximum {
+    --max-content-width: 100vw;
+  }
+
+  --content-padding-horizontal: max(
+    calc((100vw - var(--max-content-width)) / 2),
+    var(--min-content-padding-horizontal)
+  );
+}

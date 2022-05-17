@@ -1,0 +1,25 @@
+body {
+  background-color: var(--semi-color-bg-0);
+  color: var(--semi-color-text-0);
+
+  *::selection {
+    color: var(--semi-color-bg-0);
+    background-color: var(--semi-color-primary);
+  }
+}
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+main {
+  position: relative;
+  padding-top: var(--header-height);
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  z-index: 0;
+}

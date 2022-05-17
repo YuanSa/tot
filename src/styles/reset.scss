@@ -1,0 +1,28 @@
+* {
+  transition: color 0.04s linear, background-color 0.2s linear,
+    border-color 0.2s linear;
+}
+
+body,
+body[theme-mode="dark"],
+body .semi-always-dark {
+  margin: 0;
+  font-family: "Source Han Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Cancel Semi.Modal impact on layout
+  width: 100% !important;
+  overflow-y: scroll !important;
+}
+
+#root {
+  display: contents;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,11 @@
+{
+  "author": "YANG Zi Han",
+  "content": "# HTML 中文, 1234\r\n\r\nHTMLfddsssaaahahaha\r\n\r\n```html\r\n<html>\r\n  <head>\r\n    <title>Test</title>\r\n  </head>\r\n  <body>\r\n    <header></header>\r\n    <main>\r\n      <article class=\"class\" id=\"id\">\r\n        <h1>Test</h1>\r\n        <section>\r\n          <h2>Section 1</h2>\r\n          <p>Paragraph 1</p>\r\n        </section>\r\n        <section>\r\n          <h2>Section 2</h2>\r\n          <p>Paragraph 2</p>\r\n        </section>\r\n      </article>\r\n    </main>\r\n    <aside></aside>\r\n    <footer></footer>\r\n    <!-- Test Comments -->\r\n    <script>\r\n      const a = \"123\";\r\n    </script>\r\n  </body>\r\n</html>\r\n```\r\n\r\n```css\r\nh1:hover {\r\n  color: #ffffffaa;\r\n  font-size: 12px;\r\n  line-height: 7;\r\n  font-weight: bolder;\r\n  grid-template:\r\n    \"area ...\" auto\r\n    \"area ...\" 1fr /\r\n    1fr minmax(10px, 100px);\r\n  grid-area: area;\r\n}\r\n\r\n.class:not(::first-of-child) {\r\n}\r\n\r\n#id::after {\r\n  font-family: \"Source Han Sans SC VF\", serif, sans-serif, mono;\r\n}\r\n\r\n@keyframe {\r\n  from {\r\n    opacity: 1;\r\n  }\r\n\r\n  to {\r\n    opacity: 0.5;\r\n  }\r\n}\r\n```\r\n\r\n```js\r\nconst a = \"2134fff\";\r\n\r\n(\"123\");\r\n\r\nfunction hi() {\r\n  console.log(\"Hello world!\", 123);\r\n}\r\n\r\nfunction hi() {\r\n  console.log(\"Hello world!\", 123);\r\n}\r\n\r\nfunction hi() {\r\n  console.log(\"Hello world!\", 123);\r\n}\r\n\r\nfunction hi() {\r\n  console.log(\"Hello world!\", 123);\r\n}\r\n\r\nfunction hi() {\r\n  console.log(\"Hello world!\", 123);\r\n}\r\n```\r\n\r\nthis is what you should do\r\n\r\nhahaha\r\n\r\nndjndfjg;erjg\r\n\r\ngmcojgej,r;og",
+  "cover": "city",
+  "createTime": 1652542462475,
+  "description": "HTML 入门",
+  "id": "frontend-tutorial-html-basis-1-copy",
+  "language": "zh-CN",
+  "title": "HTML 中文, 1234",
+  "updateTime": 1651645876126
+}

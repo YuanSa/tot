@@ -1,0 +1,123 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 var(--min-content-padding-horizontal);
+  background-color: var(--semi-color-bg-0);
+  box-shadow: 0 2px 2px 0 var(--semi-color-shadow);
+  position: fixed;
+  top: 0;
+  height: var(--header-height);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media print {
+  .header {
+    display: none;
+  }
+}
+
+.title {
+  font-weight: 900;
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: transform .15s;
+
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: var(--semi-color-text-0);
+  }
+
+  &:active {
+    transform: scale(.95);
+  }
+}
+
+.subtitle {
+  position: relative;
+  top: 2px;
+  color: var(--semi-color-text-3);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.nav {
+  flex: auto;
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  height: 100%;
+
+  .link {
+    user-select: none;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 16px;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .link-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .link-cover {
+      width: 100%;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: currentColor;
+      z-index: 2;
+      transition: height 0.3s;
+      overflow: hidden;
+      border-radius: 0 0 var(--semi-border-radius-medium)
+        var(--semi-border-radius-medium);
+      box-shadow: 4px 4px 2px 0 var(--semi-color-shadow);
+
+      .link-cover-text {
+        width: 100%;
+        height: var(--header-height);
+        color: var(--semi-color-bg-0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .active-link {
+    .link-cover {
+      height: calc(100% + var(--header-overflow));
+    }
+  }
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+
+  > .settings-button {
+    padding: 6px 8px;
+    opacity: 0.8;
+    background-color: transparent;
+    transition: opacity 0.1s, background-color 0.1s;
+    border-radius: var(--semi-border-radius-small);
+
+    &:hover {
+      opacity: 1;
+      background-color: var(--semi-color-fill-0);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.hljs.language-css .hljs {
+  &-selector {
+    &-tag, &-class, &-id, &-pseudo {
+      color: #d7ba7d;
+    }
+    color: #808080;
+  }
+  &-keyword {
+    color: #b1608e;
+  }
+  &-attribute {
+    color: #9cdcfe;
+  }
+  &-string, &-number {
+    color: #ce9178;
+  }
+  &-built_in {
+    color: #d7ba7d;
+  }
+  &-comment {
+    color: #6a9955;
+  }
+}

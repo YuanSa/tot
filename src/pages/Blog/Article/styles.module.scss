@@ -1,0 +1,55 @@
+.main {
+  position: relative;
+  overflow: visible;
+}
+
+.banner {
+  position: sticky;
+  top: var(--header-height);
+  left: 0;
+  z-index: 1;
+  background-color: var(--semi-color-bg-0);
+  background-image: linear-gradient(
+    var(--semi-color-warning-light-default),
+    var(--semi-color-warning-light-default)
+  );
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 600px;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.article {
+  position: relative;
+  padding: 0 var(--content-padding-horizontal);
+  transition: padding 0.2s;
+}
+
+.page {
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--semi-color-bg-0);
+  padding: 18px 24px 22px;
+  margin: 12px;
+  border-radius: var(--semi-border-radius-small);
+}
+
+@media print {
+  .article,
+  .page {
+    padding: 0;
+    margin: 0;
+  }
+  .page > *:first-of-type {
+    margin-top: 0;
+  }
+}

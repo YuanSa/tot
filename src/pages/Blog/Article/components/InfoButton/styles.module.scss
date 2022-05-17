@@ -1,0 +1,70 @@
+.wrapper {
+  --size: 2.4em;
+  --front-color: hsl(300deg, 60%, 50%);
+  --back-color: hsl(300deg, 50%, 100%);
+
+  position: fixed;
+  right: 150px;
+  bottom: 100px;
+  box-sizing: content-box;
+  width: var(--size);
+  height: var(--size);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.4em;
+  box-shadow: 0 0 2px 0 var(--semi-color-shadow);
+  transform: scale(1);
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    --front-color: hsl(320deg, 75%, 50%);
+
+    > .front {
+      width: calc(1.5 * var(--size));
+    }
+  }
+
+  &:active {
+    transform: scale(.95);
+    --front-color: hsl(320deg, 75%, 45%);
+
+    > .front {
+      width: calc(1.6 * var(--size));
+    }
+  }
+}
+
+.front,
+.back {
+  user-select: none;
+  position: absolute;
+  padding: 0.4em;
+  top: 0;
+  left: 0;
+  width: calc(1 * var(--size));
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  font-family: "Source Han Serif";
+  font-weight: 600;
+  line-height: 1.2;
+  transition: all 0.2s;
+}
+
+.front {
+  z-index: 1;
+  color: var(--back-color);
+  background-color: var(--front-color);
+  overflow: hidden;
+}
+
+.back {
+  z-index: 0;
+  color: var(--front-color);
+  overflow: visible;
+}
+
+.unbreakable {
+  white-space: nowrap;
+}

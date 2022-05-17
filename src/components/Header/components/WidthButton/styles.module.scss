@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  cursor: pointer;
+  color: red;
+  color: var(--semi-color-text-0);
+
+  > .text {
+    font-size: 0.8em;
+  }
+}

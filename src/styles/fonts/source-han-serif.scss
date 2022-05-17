@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Source Han Serif";
+  font-weight: 0 250;
+  src: local("Source Han Serif VF"), local("Source Han Serif SC VF"),
+    local("Source Han Serif TC VF"),
+    url("@/assets/font/SourceHanSerifSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSerifSC-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: "Source Han Serif";
+  font-weight: 250 350;
+  src: local("Source Han Serif VF"), local("Source Han Serif SC VF"),
+    local("Source Han Serif TC VF"),
+    url("@/assets/font/SourceHanSerifSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSerifSC-Light.otf");
+}
+@font-face {
+  font-family: "Source Han Serif";
+  font-weight: 350 450;
+  src: local("Source Han Serif VF"), local("Source Han Serif SC VF"),
+    local("Source Han Serif TC VF"),
+    url("@/assets/font/SourceHanSerifSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSerifSC-Regular.otf");
+}
+
+@font-face {
+  font-family: "Source Han Serif";
+  font-weight: 450 550;
+  src: local("Source Han Serif VF"), local("Source Han Serif SC VF"),
+    local("Source Han Serif TC VF"),
+    url("@/assets/font/SourceHanSerifSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSerifSC-Medium.otf");
+}
+
+@font-face {
+  font-family: "Source Han Serif";
+  font-weight: 550 650;
+  src: local("Source Han Serif VF"), local("Source Han Serif SC VF"),
+    local("Source Han Serif TC VF"),
+    url("@/assets/font/SourceHanSerifSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSerifSC-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Source Han Serif";
+  font-weight: 650 800;
+  src: local("Source Han Serif VF"), local("Source Han Serif SC VF"),
+    local("Source Han Serif TC VF"),
+    url("@/assets/font/SourceHanSerifSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSerifSC-Bold.otf");
+}
+
+@font-face {
+  font-family: "Source Han Serif";
+  font-weight: 800 900;
+  src: local("Source Han Serif VF"), local("Source Han Serif SC VF"),
+    local("Source Han Serif TC VF"),
+    url("@/assets/font/SourceHanSerifSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSerifSC-Heavy.otf");
+}

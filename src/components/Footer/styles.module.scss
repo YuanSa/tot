@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  padding: 36px 0 46px;
+  background-color: var(--semi-color-black);
+  color: white;
+
+  > .motto {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  > .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+
+    > .links-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      > .link {
+        color: white;
+        opacity: 0.5;
+        font-size: 0.8em;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  > .sponsor-list {
+    display: flex;
+
+    > .sponsor {
+      display: flex;
+      align-items: center;
+      color: var(--semi-color-white);
+
+      > .inline-logo {
+        height: 1.4em;
+        margin: 0 0.5em;
+      }
+    }
+  }
+}
+
+@media print {
+  .footer {
+    display: none;
+  }
+}

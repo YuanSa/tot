@@ -1,0 +1,1 @@
+@node ../scripts/compile-blogs.mjs ../studio/blog-article ../src/assets/blog-article

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Source Han Sans";
+  font-weight: 0 250;
+  src: local("Source Han Sans VF"), local("Source Han Sans SC VF"),
+    local("Source Han Sans TC VF"),
+    url("@/assets/font/SourceHanSansSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSansSC-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans";
+  font-weight: 250 350;
+  src: local("Source Han Sans VF"), local("Source Han Sans SC VF"),
+    local("Source Han Sans TC VF"),
+    url("@/assets/font/SourceHanSansSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSansSC-Light.otf");
+}
+@font-face {
+  font-family: "Source Han Sans";
+  font-weight: 350 450;
+  src: local("Source Han Sans VF"), local("Source Han Sans SC VF"),
+    local("Source Han Sans TC VF"),
+    url("@/assets/font/SourceHanSansSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSansSC-Regular.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans";
+  font-weight: 450 550;
+  src: local("Source Han Sans VF"), local("Source Han Sans SC VF"),
+    local("Source Han Sans TC VF"),
+    url("@/assets/font/SourceHanSansSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSansSC-Medium.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans";
+  font-weight: 550 650;
+  src: local("Source Han Sans VF"), local("Source Han Sans SC VF"),
+    local("Source Han Sans TC VF"),
+    url("@/assets/font/SourceHanSansSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSansSC-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans";
+  font-weight: 650 800;
+  src: local("Source Han Sans VF"), local("Source Han Sans SC VF"),
+    local("Source Han Sans TC VF"),
+    url("@/assets/font/SourceHanSansSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSansSC-Bold.otf");
+}
+
+@font-face {
+  font-family: "Source Han Sans";
+  font-weight: 800 900;
+  src: local("Source Han Sans VF"), local("Source Han Sans SC VF"),
+    local("Source Han Sans TC VF"),
+    url("@/assets/font/SourceHanSansSC-VF.otf.woff2")
+      format("woff2-variations"),
+    url("@/assets/font/SourceHanSansSC-Heavy.otf");
+}

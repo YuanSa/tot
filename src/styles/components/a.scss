@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: var(--semi-color-link);
+
+  &:hover {
+    color: var(--semi-color-link-hover);
+  }
+
+  &:active {
+    color: var(--semi-color-link-active);
+  }
+
+  &:visited {
+    color: var(--semi-color-link-visited);
+  }
+}

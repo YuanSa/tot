@@ -1,0 +1,14 @@
+body {
+  --gradient-orange: linear-gradient(
+    to top left,
+    hsl(15deg, 100%, 50%),
+    hsl(45deg, 100%, 50%)
+  );
+  --gradient-1: var(--gradient-orange);
+  --gradient-green: linear-gradient(
+    to top left,
+    hsl(130, 100%, 30%),
+    hsl(130, 100%, 45%)
+  );
+  --gradient-2: var(--gradient-green);
+}

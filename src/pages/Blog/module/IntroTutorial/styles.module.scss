@@ -1,0 +1,73 @@
+.cover {
+  padding: 150px 0 100px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .icon {
+    background-color: var(--semi-color-text-0);
+    background-image: var(--gradient-green);
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    border-radius: var(--semi-border-radius-medium);
+    color: rgba(var(--semi-white));
+    box-shadow: 0 0 2px var(--semi-color-shadow);
+  }
+
+  > .title {
+    font-family: "Source Han Serif";
+    font-size: 2.5em;
+    letter-spacing: 8px;
+    font-weight: 900;
+    margin: 36px 0 0;
+  }
+
+  > .subtitle {
+    margin: 16px 0 0;
+    font-weight: 300;
+
+    > strong {
+      font-weight: 300;
+      padding: 0 4px 2px;
+      margin: 0 2px;
+      border-radius: var(--semi-border-radius-small);
+      color: var(--semi-color-bg-0);
+      background-color: var(--semi-color-text-0);
+      background-image: var(--gradient-green);
+    }
+  }
+}
+
+.section {
+  margin: 100px 0 150px;
+  padding: 0 120px;
+
+  > .title {
+    font-size: 3em;
+    line-height: 1;
+  }
+
+  > .card-list {
+    margin: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 48px;
+    padding-left: 1.5em;
+    margin-left: 1.25em;
+    border-left: 6px solid var(--semi-color-fill-0);
+
+    > .card {
+      width: 500px;
+
+      // &:last-child {
+      //   flex:auto;
+      // }
+    }
+  }
+}

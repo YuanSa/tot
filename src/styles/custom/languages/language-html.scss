@@ -1,0 +1,17 @@
+.hljs.language-html .hljs {
+  &-tag {
+    color: #808080;
+  }
+  &-name {
+    color: #569cd6;
+  }
+  &-attr {
+    color: #9cdcfe;
+  }
+  &-string {
+    color: #ce9178;
+  }
+  &-comment {
+    color: #6a9955;
+  }
+}
