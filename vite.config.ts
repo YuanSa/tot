@@ -16,10 +16,6 @@ export default defineConfig({
   assetsInclude: ["**/*.md"],
   server: {
     port: Port,
-    open: `https://localhost:${Port}`,
-    https: {
-      pfx: readFileSync("./chore/cert.pfx"),
-      passphrase: "Yuansa0130",
-    },
+    open: `http://localhost:${Port}`,
   },
 });

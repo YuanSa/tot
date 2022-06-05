@@ -2,23 +2,13 @@ import { FC } from "react";
 import { useT } from "@/utils/language";
 import { GiBookshelf } from "react-icons/gi";
 import styles from "./styles.module.scss";
-import { Divider, Empty } from "@douyinfe/semi-ui";
+import { Divider } from "@douyinfe/semi-ui";
 import { ElegantArticleCard } from "../../components/ElegantArticleCard";
+import { BlogModuleIntroTutorialConfig } from "./config";
 import { numToAlpha } from "@/utils/text";
-import { useIntroTutorialConfig } from "@/config/intro-tutorial";
-import { ErrorPage } from "@/pages/Error";
 
 export const BlogModuleIntroTutorial: FC = () => {
   const t = useT();
-  const { config, loading, error } = useIntroTutorialConfig();
-
-  if (true || error) {
-    return (
-      <main>
-        <ErrorPage error={new Error('Test')} />
-      </main>
-    );
-  }
 
   return (
     <main className={styles.page}>
@@ -27,10 +17,10 @@ export const BlogModuleIntroTutorial: FC = () => {
           <GiBookshelf />
         </div>
         <h1 className={styles.title}>{t`intro_tutorial`}</h1>
-        <p className={styles.subtitle}>{t`intro_tutorial_subtitle`}</p>
+        <p className={styles.subtitle}>从零开始，学习“创造艺术”的前端技术</p>
       </div>
       <Divider dashed />
-      {config?.map((section, sectionIndex) => (
+      {BlogModuleIntroTutorialConfig.map((section, sectionIndex) => (
         <section className={styles.section} key={sectionIndex}>
           <h2 className={styles.title}>{section.sectionTitle}</h2>
           <div className={styles["card-list"]}>
@@ -38,10 +28,7 @@ export const BlogModuleIntroTutorial: FC = () => {
               <ElegantArticleCard
                 key={articleIndex}
                 className={styles.card}
-                index={
-                  article.index ??
-                  `${numToAlpha(sectionIndex)}${articleIndex + 1}`
-                }
+                index={article.index ?? `${numToAlpha(sectionIndex)}${articleIndex + 1}`}
                 title={article.title}
                 description={article.description}
                 disabled={article.disabled}

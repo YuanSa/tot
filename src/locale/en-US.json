@@ -29,7 +29,13 @@
   "blog_subtitle": "Front-end Technologies Library",
   "article_information": "Article Information",
   "intro_tutorial": "Intro Tutorial",
+  "intro_tutorial_subtitle": "Front-end technology - Art creation 101",
   "tech_topic": "Tech Topic",
   "resource_sharing": "Resource Sharing",
-  "under_construction": "Under construction"
+  "under_construction": "Under construction",
+  "error_occurred_title": "Error Occurred",
+  "error_occurred_description": "Sorry, We are unable to show the contents here due to an app error. Please click the following button to send us an email with additional info you have to report this bug if you wish.",
+  "error_contract_contact": "Report via email",
+  "error_contract_email_subject": "Error Occurred to the Website",
+  "error_contract_email_body": "Hi, there's an error occurred to your website when I ____. The details are following:\n\nURL: {url}\n\nTime: {time}\n\nStack: {stack}"
 }
