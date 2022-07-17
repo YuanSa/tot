@@ -4,6 +4,7 @@
   "blog": "TOT Blog",
   "resume": "Resume",
   "service": "Service",
+  "offers": "Offers",
   "price": "Price",
   "contracts": "Contracts",
   "follow_system": "Follow System",
@@ -37,5 +38,7 @@
   "error_occurred_description": "Sorry, We are unable to show the contents here due to an app error. Please click the following button to send us an email with additional info you have to report this bug if you wish.",
   "error_contract_contact": "Report via email",
   "error_contract_email_subject": "Error Occurred to the Website",
-  "error_contract_email_body": "Hi, there's an error occurred to your website when I ____. The details are following:\n\nURL: {url}\n\nTime: {time}\n\nStack: {stack}"
+  "error_contract_email_body": "Hi, there's an error occurred to your website when I ____. The details are following:\n\nURL: {url}\n\nTime: {time}\n\nStack: {stack}",
+  "to": "to",
+  "till_now": "till now"
 }

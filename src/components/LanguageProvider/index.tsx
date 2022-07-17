@@ -19,6 +19,9 @@ export const FallbackLanguageCode: LanguageCode = "en-US";
 
 export const MonoWidthLanguage: LanguageCode[] = ['zh-CN'];
 
+export type LanguageObject = Partial<Record<LanguageCode | 'default', string>>;
+export type LanguageItem = string | LanguageObject;
+
 type LanguageConfig = {
   language: LanguageCode;
   // setLanguage: (newLanguage?: LanguageCode) => Promise<TextSet>; // TODO:

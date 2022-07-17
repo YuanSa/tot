@@ -12,6 +12,7 @@ import { PagePath, PagePathParam } from "./constants/PagePath";
 import { BlogArticle } from "./pages/Blog/Article";
 import { BlogHomepage } from "./pages/Blog/Homepage";
 import { BlogModuleIntroTutorial } from "./pages/Blog/module/IntroTutorial";
+import { Resume } from "./pages/Resume";
 import "./styles/index.scss";
 
 const Main: FC = () => (
@@ -38,7 +39,7 @@ const Main: FC = () => (
         element={<BlogArticle />}
       />
     </Route>
-    <Route path={PagePath.Resume} element={<main>21445553</main>} />
+    <Route path={PagePath.Resume} element={<Resume />} />
     <Route path={PagePath.Service} element={<main>21fdsdsaf3</main>} />
     <Route path={PagePath.Price} element={<main>21zzz3</main>} />
     <Route path={PagePath.Contracts} element={<main>2dddd13</main>} />

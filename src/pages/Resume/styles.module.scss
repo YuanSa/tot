@@ -1,0 +1,61 @@
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.page {
+  border: 1px solid var(--semi-color-border);
+  border-radius: var(--semi-border-radius-medium);
+  padding: 24px;
+  width: min(100vw, 1000px);
+}
+
+.section {
+  > .section-title {
+    font-size: 20px;
+    font-weight: 900;
+    background-color: var(--semi-color-fill-1);
+    padding: 4px 12px;
+    margin: 12px 0 0;
+  }
+
+  > .section-item {
+    padding: 6px 12px;
+    &:not(:last-child) {
+      border-bottom: 1px dashed var(--semi-color-border);
+    }
+  }
+}
+
+.name {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.contacts {
+  margin-top: 8px;
+  font-style: normal;
+  text-align: center;
+
+  > .contact-item {
+    font-size: 14px;
+    color: var(--semi-color-text-2);
+    padding: 0 6px;
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--semi-color-border);
+    }
+
+    &[href] {
+      text-decoration: underline;
+      text-decoration-color: var(--semi-color-text-3);
+    }
+
+    &:hover {
+      color: var(--semi-color-text-1);
+    }
+  }
+}

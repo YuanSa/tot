@@ -11,6 +11,7 @@ specifiers:
   date-fns: ^2.28.0
   deep-sort-object: ^1.0.2
   normalize.css: ^8.0.1
+  pnpm: ^7.1.8
   prop-types: 15.7.2
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -31,6 +32,7 @@ dependencies:
   classnames: 2.3.1
   date-fns: 2.28.0
   normalize.css: 8.0.1
+  pnpm: 7.1.8
   prop-types: 15.7.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -1596,6 +1598,12 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+
+  /pnpm/7.1.8:
+    resolution: {integrity: sha512-6E+iGdkAcEtEvmxgLGpHiK51ArFK8mBUFIQ6/x5LeL+YCWbi1r1Fy2UPN1dDWUjy2xauLjgIMp/KQ5s5b85EBA==}
+    engines: {node: '>=14.19'}
+    hasBin: true
+    dev: false
 
   /postcss/8.4.12:
     resolution: {integrity: sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==}

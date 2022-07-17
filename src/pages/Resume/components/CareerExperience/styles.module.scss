@@ -1,0 +1,53 @@
+.career-item {
+}
+
+.header {
+  display: flex;
+
+  > .title {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+
+    > .summary {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    > .description {
+      color: var(--semi-color-text-2);
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  > .extra {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    > .location {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    > .period {
+      color: var(--semi-color-text-2);
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+
+.details {
+  margin: .4em 0 0 0;
+  padding-inline-start: 1.5em;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+
+  &.single {
+  padding-inline-start: 0;
+  line-height: 1.6;
+  }
+}

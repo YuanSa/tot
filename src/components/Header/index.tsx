@@ -14,9 +14,7 @@ const { Text } = Typography;
 const navConfig = [
   { textKey: "blog", link: PagePath.Blog },
   { textKey: "resume", link: PagePath.Resume },
-  { textKey: "service", link: PagePath.Service },
-  { textKey: "price", link: PagePath.Price },
-  { textKey: "contracts", link: PagePath.Contracts },
+  { textKey: "offers", link: PagePath.Price },
 ];
 
 export const Header: FC = () => {

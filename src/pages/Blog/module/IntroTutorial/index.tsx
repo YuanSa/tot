@@ -12,7 +12,7 @@ export const BlogModuleIntroTutorial: FC = () => {
   const t = useT();
   const { config, loading, error } = useIntroTutorialConfig();
 
-  if (true || error) {
+  if (error) {
     return (
       <main>
         <ErrorPage error={new Error('Test')} />

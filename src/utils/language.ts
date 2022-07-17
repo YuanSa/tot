@@ -1,6 +1,6 @@
 import { ReactNode, useCallback } from "react";
 import { useIntl } from "react-intl";
-import { useLanguage } from "../components/LanguageProvider";
+import { LanguageItem, LanguageObject, useLanguage } from "../components/LanguageProvider";
 
 type ID = string | TemplateStringsArray;
 
@@ -27,4 +27,16 @@ export const useT = (): T => {
     [intl.formatMessage, isLoading, intl.messages]
   );
   return t;
+};
+
+export const say = (text?: LanguageItem): LanguageObject => {
+  if (typeof text === 'string') {
+    return {
+      default: text,
+    };
+  } else if (text) {
+    return text;
+  } else {
+    return { default: '' };
+  }
 };
