@@ -36,7 +36,7 @@ export const Resume: FC = () => {
             location="中国 上海"
             details={[
               "炙热星河（抖音音乐人）前端开发",
-              "SoundOn（TikTok 音乐发行服务）前端开发",
+              "SoundOn（TikTok 音乐发行服务）前端开发、API 开发",
               "团队前端公用组件库开发者",
             ]}
           />
@@ -104,7 +104,7 @@ export const Resume: FC = () => {
           />
         </section>
         <section className={styles.section}>
-          <h1 className={styles["section-title"]}>课外活动</h1>
+          <h1 className={styles["section-title"]}>业余活动</h1>
           <CareerExperience
             className={styles["section-item"]}
             summary="Bilibili 视频网 UP 主"
