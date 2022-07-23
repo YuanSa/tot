@@ -5,6 +5,7 @@ export enum PagePath {
   Price = "price",
   Contracts = "contracts",
   Help = 'help',
+  FAQ = 'katrina',
 
   // Blog
   Blog = "blog",

@@ -1,0 +1,62 @@
+.page {
+  padding: 16px;
+}
+
+.form {
+  :global(.semi-form-field) {
+    padding: 0;
+  }
+  :global(.semi-input-wrapper) {
+    background-color: transparent;
+  }
+}
+
+.id-input {
+  display: flex;
+  height: fit-content;
+  line-height: unset;
+
+  &,
+  &::placeholder,
+  :global(.semi-input-prefix-text) {
+    color: var(--semi-color-text-2);
+  }
+
+  :global(.semi-input)::placeholder {
+    opacity: 0.75;
+  }
+
+  :global(.semi-input-default),
+  :global(.semi-input-wrapper-default) {
+    height: fit-content;
+    line-height: unset;
+  }
+}
+
+.item-input {
+  width: 100%;
+
+  .item-title {
+    :global(.semi-input) {
+      font-size: 24px;
+      font-weight: 700;
+      &::placeholder {
+        color: var(--semi-color-text-3);
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.page {
+  :global(.semi-collapse-header-icon) {
+    align-self: flex-end;
+    margin-bottom: 7px;
+  }
+}
+
+.item-content {
+  margin-left: 26px;
+  width: calc(100% - 26px);
+  box-sizing: border-box;
+}

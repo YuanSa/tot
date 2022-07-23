@@ -1,0 +1,39 @@
+{
+  "sdkVersion": "0.1.0",
+  "contentsVersion": "0.1.0",
+  "contents": [
+    {
+      "lang": "en-US",
+      "contents": [
+        {
+          "id": "welcome",
+          "title": "Welcome to YuanSa FAQ",
+          "contents": [
+            {
+              "id": "about",
+              "title": "What's YuanSa FAQ?",
+              "content": "YuanSa FAQ is a FAQ online editor that supports multi languages and classification. By using JSON format to save your work, you can easily customize it's display styles."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lang": "zh",
+      "contents": [
+        {
+          "id": "welcome",
+          "title": "欢迎使用元卅FAQ",
+          "contents": [
+            {
+              "id": "about",
+              "title": "什么是元卅FAQ？",
+              "content": "元卅FAQ是一款支持多语言、分类的在线FAQ编辑器。借助纯净的 JSON 格式存储，使你你可以轻松实现样式定制化。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

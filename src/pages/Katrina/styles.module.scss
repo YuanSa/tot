@@ -1,0 +1,50 @@
+.page {
+  padding: 56px 32px;
+}
+
+.title {
+  font-family: serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: serif;
+  font-size: 16px;
+  color: #444;
+  letter-spacing: 4px;
+}
+
+.cards {
+  display: grid;
+  gap: 6px;
+  width: fit-content;
+  margin: auto;
+  padding: 32px;
+}
+
+.card {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  transition: box-shadow 0.5s, border 0.5s;
+  transition: color .2s, background-color .2s;
+
+  &:hover {
+    color: #fff;
+    background-color: var(--semi-color-primary);
+  }
+}
+
+.card-icon {
+  font-size: 1.5em;
+}
+
+.card-title {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 300;
+}

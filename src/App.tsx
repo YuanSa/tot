@@ -12,6 +12,7 @@ import { PagePath, PagePathParam } from "./constants/PagePath";
 import { BlogArticle } from "./pages/Blog/Article";
 import { BlogHomepage } from "./pages/Blog/Homepage";
 import { BlogModuleIntroTutorial } from "./pages/Blog/module/IntroTutorial";
+import { PageKatrina } from "./pages/Katrina";
 import { Resume } from "./pages/Resume";
 import "./styles/index.scss";
 
@@ -40,6 +41,7 @@ const Main: FC = () => (
       />
     </Route>
     <Route path={PagePath.Resume} element={<Resume />} />
+    <Route path={PagePath.FAQ} element={<PageKatrina />} />
     <Route path={PagePath.Service} element={<main>21fdsdsaf3</main>} />
     <Route path={PagePath.Price} element={<main>21zzz3</main>} />
     <Route path={PagePath.Contracts} element={<main>2dddd13</main>} />
