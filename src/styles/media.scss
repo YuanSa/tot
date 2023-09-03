@@ -9,3 +9,16 @@
     display: none !important;
   }
 }
+
+@media (max-width: 500px) {
+  .at-least-medium-view,
+  .at-least-large-view {
+    display: none !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .at-least-large-view {
+    display: none !important;
+  }
+}

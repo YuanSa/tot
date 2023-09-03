@@ -18,7 +18,7 @@ const navConfig = [
 export const Header: FC = () => {
   const t = useT();
   return (
-    <header className={styles.header}>
+    <header className={classNames(styles.header, "at-least-medium-view")}>
       <Link className={styles.title} to={PagePath.Homepage}>
         {t`website_name`}
       </Link>
