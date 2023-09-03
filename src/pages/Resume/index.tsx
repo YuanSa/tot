@@ -9,6 +9,7 @@ import { FloatButton, Tooltip } from "antd";
 import type { Resume } from "./contents/types";
 import { IconPrint } from "../../components/Icon";
 import { ResumeQRCode } from "./components/QRCode";
+import { isPrintable } from "../../utils";
 
 /**
  * @todo segmental phone number
@@ -31,9 +32,11 @@ export const ResumePage: FC = () => {
           <section
             className={classNames(styles.section, styles["personal-info"])}
           >
-            <div
-              className={classNames("screen-only", styles["print-hint"])}
-            >{t`print_if_you_like`}</div>
+            {isPrintable && (
+              <div
+                className={classNames("screen-only", styles["print-hint"])}
+              >{t`print_if_you_like`}</div>
+            )}
             <h1 className={styles.name}>{data.name}</h1>
             {data.contacts && (
               <address className={styles.contacts}>
@@ -80,13 +83,15 @@ export const ResumePage: FC = () => {
           />
         </div>
       </main>
-      <Tooltip title={t`print`} placement="left">
-        <FloatButton
-          className="screen-only"
-          icon={<IconPrint />}
-          onClick={window.print}
-        />
-      </Tooltip>
+      {isPrintable && (
+        <Tooltip title={t`print`} placement="left">
+          <FloatButton
+            className="screen-only"
+            icon={<IconPrint />}
+            onClick={window.print}
+          />
+        </Tooltip>
+      )}
     </>
   );
 };

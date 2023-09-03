@@ -1,0 +1,1 @@
+export { isPrintable } from "./environment";

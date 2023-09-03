@@ -14,7 +14,7 @@ export const ResumeQRCode: FC<ResumeQRCodeProps> = ({
 }) => {
   const url = window.location.href;
   const urlWithoutProtocol = useMemo(() => {
-    return url.replace(/^https?:\/\//, "");
+    return url.replace(/^https?:\/\//, "").replace(/\/$/, '');
   }, [url]);
 
   return (

@@ -66,8 +66,13 @@
     color: var(--semi-color-text-0);
 
     &.single {
+      text-align: left;
       padding-inline-start: 0;
       line-height: 1.6;
+    }
+
+    > .details-item {
+      text-align: left;
     }
   }
 }
@@ -112,7 +117,7 @@
                   display: none;
                 }
                 &::after {
-                  margin-inline-start: .5em;
+                  margin-inline-start: 0.5em;
                   content: attr(href);
                 }
               }
@@ -153,8 +158,87 @@
       font-size: 14px;
 
       .details-item {
+        text-align: left;
+
         &:not(:last-child) {
           margin-bottom: 0.1cm;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    > .header {
+      display: flex;
+      flex-direction: column;
+
+      > .extra {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        font-weight: 900;
+        line-height: 1;
+        order: 1;
+        margin-block-end: 3px;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          flex: auto;
+          border-bottom: 1px dashed var(--color-text-3);
+          height: 0;
+          margin-inline-end: 0.5em;
+        }
+
+        > .location {
+          flex-shrink: 0;
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+        > .period {
+          flex-shrink: 0;
+          margin: 0;
+          font-size: 12px;
+          font-weight: bold;
+
+          &:not(:first-child)::before {
+            content: " | ";
+            color: var(--color-text-2);
+            margin-inline-start: 0.3em;
+            line-height: 1;
+          }
+        }
+      }
+
+      > .title {
+        order: 2;
+
+        > .main {
+          > .summary {
+            font-size: 1.4em;
+          }
+        }
+
+        > .description {
+          color: var(--color-text-2);
+          font-size: 12px;
+          font-style: italic;
+        }
+      }
+    }
+
+    > .details {
+      > .details-item {
+        line-height: 1.5;
+
+        &:not(:first-child) {
+          margin-top: 0.5em;
+          margin-block-start: 0.5em;
         }
       }
     }

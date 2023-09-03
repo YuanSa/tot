@@ -60,6 +60,12 @@
           padding: 8px 12px;
           margin: 12px 0 0;
           line-height: 1;
+          text-transform: uppercase;
+
+          &::first-letter {
+            font-size: 1.4em;
+            line-height: 0;
+          }
         }
 
         > .section-item {
@@ -121,6 +127,30 @@
 
       .qr-code {
         margin: 1cm auto 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .resume {
+    padding: 6px;
+
+    .page {
+      padding: 6px;
+
+      .name {
+        margin-bottom: 0;
+      }
+
+      .section {
+        > .section-item {
+          padding: 6px 12px;
+
+          &:not(:last-child) {
+            border-bottom: none;
+          }
+        }
       }
     }
   }

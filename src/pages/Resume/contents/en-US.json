@@ -28,8 +28,8 @@
       "title": "Projects",
       "items": [
         {
-          "title": "SoundOn (music distribution platform of ByteDance)",
-          "subtitle": "Provide music copyrights to ByteDance products",
+          "title": "SoundOn",
+          "subtitle": "A music distribution platform of ByteDance",
           "date": "2021-02 till now",
           "highlights": [
             "Build the hole project from ground up. Established the state management system based on SWR in frontend. And keep maintain/develope it till now.",
@@ -41,7 +41,7 @@
           "links": [{ "url": "https://www.soundon.global" }]
         },
         {
-          "title": "Douyin Music Open Platform (Douyin Musician)",
+          "title": "Douyin Music Open Platform",
           "subtitle": "Help artists upload their musics to Douyin and verity their identity as \"Musician\" to get the verified badge.",
           "date": "2020-10 to 2021-02",
           "highlights": [
@@ -72,7 +72,7 @@
           ]
         },
         {
-          "title": "University of Electronic Science and Technology of China (Abbr. UESTC)",
+          "title": "University of Electronic Science and Technology of China",
           "subtitle": "Bachelor in Electro-optics Information Science and Technology. GPA: 3.8/4.0",
           "location": "Chengdu, China",
           "date": "2015-09 to 2019-07",
@@ -103,7 +103,8 @@
           ]
         },
         {
-          "title": "Sumer Project \"Creation Management\" of National University of Singapore ",
+          "title": "Creation Management Project",
+          "subtitle": "Summer Project of National University of Singapore",
           "date": "2017-01",
           "highlights": [
             "Investigated the commercial modal of the Universal and provided our advice to improve. Our team are chosen as \"The Best Team\", and our team members got the recommendation letter from the Execute Chief, Hang Chang Chieh."
